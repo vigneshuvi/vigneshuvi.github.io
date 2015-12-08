@@ -140,6 +140,103 @@ body{
     color: white;
 }
 
+.center-profile{
+    margin: 0 auto;
+    right: 0px;
+    left: 0px;
+    top: 30px;
+    position: relative;
+    bottom: 30px;
+    width: 80%;
+}
+
+.user {
+    float: left;
+    margin: 30px;
+    padding: 15px;
+    width: 40%;
+    min-width: 280px;
+    max-width: 300px;
+    height:  180px;
+    font-size: 18px;
+}
+
+.user-column-1-of-3 {
+    margin: 0 auto;
+    min-width: 160px;
+    right: 0px;
+    left: 0px;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.user-column-2-of-3 {
+    margin: 0 auto;
+    min-width: 100px;
+    right: 0px;
+    left: 0px;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.user-column-3-of-3 {
+    margin: 0 auto;
+    min-width: 100px;
+    padding: 20px;
+    right: 0px;
+    left: 0px;
+    width: 80%;
+    text-align: center;
+}
+
+.userImage
+{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.profileImage
+{
+    background-position: center center;
+    background-image: url('../images/vignesh.jpg');
+}
+
+
+.user-name {
+    font-size: 18px;
+    color: red;
+}
+
+.user-position {
+    font-size: 17px;
+    color: gray;
+}
+
+.user-experience{
+    font-size: 17px;
+    color: gray;
+}
+
+.user-contact-email {
+    font-size: 17px;
+    color: gray;
+}
+
+
+
+.user-name {
+    font-size: 24px;
+    color: red;
+}
+
+
 .experience {
     float: left;
     margin: 30px;

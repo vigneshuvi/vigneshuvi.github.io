@@ -23,60 +23,51 @@
             <div class="navigationBarTitle" >Profile</div>
         </div>
         <div class="pageBody">
-            <div class="experience">
-                <h3>Senior Software Engineer</h3>
-                <p>Sysvine Technologies Pvt. Ltd. - February, 2015 to till Date</p>
-                <p>It is the most populous city in the United Kingdom,
-                    with a metropolitan area of over 13 million inhabitants.</p>
-            </div>
-            <div class="experience">
-                <h3>Software Engineer Level - II</h3>
-                <p>Sysvine Technologies Pvt. Ltd. - April, 2013 to February 2014</p>
-                <p>It is the most populous city in the United Kingdom,
-                    with a metropolitan area of over 13 million inhabitants.</p>
-            </div>
-            <div class="experience">
-                <h3>Software Engineer Level - I</h3>
-                <p>Sysvine Technologies Pvt. Ltd. - April, 2013 to February 2014</p>
-                <p>It is the most populous city in the United Kingdom,
-                    with a metropolitan area of over 13 million inhabitants.</p>
-            </div>
-            <div class="experience">
-                <h3>Software Engineer Trainee</h3>
-                <p>Sysvine Technologies Pvt. Ltd. - February, 2013 to June 2014</p>
-                <p>It is the most populous city in the United Kingdom,
-                    with a metropolitan area of over 13 million inhabitants.</p>
+            <div class="center-profile">
+                <div class="user-column-1-of-3">
+                    <div class="userImage profileImage">
+                    </div>
+                </div>
+                <div class="user-column-2-of-3">
+                    <div class="user-name">Vignesh Kumar P</div>
+                    <div class="user-position">Senior Engineer</div>
+                    <div class="user-experience">Over 3 years of experience</div>
+                    <div class="user-contact-email">vigneshuvi@gmail.com</div>
+                </div>
+                <div class="user-column-3-of-3">
+                    <div class="card-face-footer">
+                        <a href="https://facebook.com/vigneshuvi" target="_blank" class="card-face__social "><img src="images/ic_fb.png" width="36" height="36" draggable="false"></a>
+                        <a href="http://stackoverflow.com/users/2586904/vignesh-kumar?tab=profile" target="_blank" class="card-face__social "><img src="images/ic_so.png" width="36" height="36" draggable="false"></a>
+                        <a href="https://www.linkedin.com/in/vignesh-kumar-62a35254" target="_blank" class="card-face__social "><img src="images/ic_li.png" width="36" height="36" draggable="false"></a>
+                        <a href="https://github.com/vigneshuvi" target="_blank" class="card-face__social "><img src="images/ic_git.png" width="36" height="36" draggable="false"></a>
+                        <a href="skype:vignesh.uvi?call" target="_blank" class="card-face__social "><img src="images/ic_skype.png" width="36" height="36" draggable="false"></a>
+
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
-
     </div>
 
     <!--Menu Page with Navigation bar and page body-->
     <div id = "menu" class="page left">
         <div class="navigationBar" >
             <div class="navigationBarLeftIcon" >
-                <div class="leftIcon" >
-
-                </div>
                 <div class="leftIconTitle" >
                     Menu
                 </div>
             </div>
-
-            <div class="navigationBarTitle" >
-
-            </div>
         </div>
         <div class="pageBody" >
             <div class="menuBodyLeft">
-                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'technologies');">
+                <div class="menuBox" onclick="javascript:pageSlider.menuBackSlide('menu', 'home');">
+                    Profile
+                </div>
+                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'experience');">
                     Experience
                 </div>
                 <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'technologies');">
                     Technologies
-                </div>
-                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'technologies');">
-                    Contact
                 </div>
             </div>
             <div class="menuBodyRight" onclick="javascript:pageSlider.menuBackSlide('menu', 'home');">
@@ -128,6 +119,37 @@
                 <p>Xcode 7, Eclipse, NetBeans and WebStorm</p>
             </div>
             </div>
+    </div>
+
+    <div id = "experience" class="page right">
+        <div class="navigationBarLeftIcon" >
+            <div class="leftIcon" >
+                <img src="images/back-icon.png" style="width:24px;height:24px;" onclick="javascript:pageSlider.backSlide('experience', 'home');" />
+            </div>
+            <div class="leftIconTitle" >
+
+            </div>
+        </div>
+        <div class="navigationBarTitle" >Experience</div>
+        <div class="pageBody">
+            <div class="experience">
+                <h3>Senior Software Engineer</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - February, 2015 to till Date</p>
+            </div>
+            <div class="experience">
+                <h3>Software Engineer Level - II</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - April, 2013 to February 2014</p>
+            </div>
+            <div class="experience">
+                <h3>Software Engineer Level - I</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - April, 2013 to February 2014</p>
+            </div>
+            <div class="experience">
+                <h3>Software Engineer Trainee</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - February, 2013 to June 2014</p>
+            </div>
+        </div>
+
     </div>
 </div>
 </body>
