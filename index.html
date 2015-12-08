@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <script type="text/javascript"  src="js/pageSlider.js"></script>
+    <link rel="stylesheet" href="css/page.css" type="text/css" >
+    <title>Vignesh Kumar</title>
+</head>
+<body>
+<!--Page with Navigation bar-->
+<div class="screen">
+    <div class="navigationBar" >
+        <div class="navigationBarTitle" ></div>
+    </div>
+
+    <!--Home Page with Navigation bar and page body-->
+    <div id = "home" class="page center">
+        <div class="navigationBar">
+            <div class="navigationBarLeftIcon" >
+                <img src="images/menu_icon.png" style="width:24px;height:24px;" onclick="javascript:pageSlider.homeMenuSlide('home', 'menu');" >
+            </div>
+            <div class="navigationBarTitle" >Profile</div>
+        </div>
+        <div class="pageBody">
+            <div class="experience">
+                <h3>Senior Software Engineer</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - February, 2015 to till Date</p>
+                <p>It is the most populous city in the United Kingdom,
+                    with a metropolitan area of over 13 million inhabitants.</p>
+            </div>
+            <div class="experience">
+                <h3>Software Engineer Level - II</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - April, 2013 to February 2014</p>
+                <p>It is the most populous city in the United Kingdom,
+                    with a metropolitan area of over 13 million inhabitants.</p>
+            </div>
+            <div class="experience">
+                <h3>Software Engineer Level - I</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - April, 2013 to February 2014</p>
+                <p>It is the most populous city in the United Kingdom,
+                    with a metropolitan area of over 13 million inhabitants.</p>
+            </div>
+            <div class="experience">
+                <h3>Software Engineer Trainee</h3>
+                <p>Sysvine Technologies Pvt. Ltd. - February, 2013 to June 2014</p>
+                <p>It is the most populous city in the United Kingdom,
+                    with a metropolitan area of over 13 million inhabitants.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Menu Page with Navigation bar and page body-->
+    <div id = "menu" class="page left">
+        <div class="navigationBar" >
+            <div class="navigationBarLeftIcon" >
+                <div class="leftIcon" >
+
+                </div>
+                <div class="leftIconTitle" >
+                    Menu
+                </div>
+            </div>
+
+            <div class="navigationBarTitle" >
+
+            </div>
+        </div>
+        <div class="pageBody" >
+            <div class="menuBodyLeft">
+                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'technologies');">
+                    Experience
+                </div>
+                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'technologies');">
+                    Technologies
+                </div>
+                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'technologies');">
+                    Contact
+                </div>
+            </div>
+            <div class="menuBodyRight" onclick="javascript:pageSlider.menuBackSlide('menu', 'home');">
+
+            </div>
+        </div>
+    </div>
+
+    <!--Technologies Page with Navigation bar and page body-->
+    <div id = "technologies" class="page right">
+        <div class="navigationBar" >
+            <div class="navigationBarLeftIcon" >
+                <div class="leftIcon" >
+                    <img src="images/back-icon.png" style="width:24px;height:24px;" onclick="javascript:pageSlider.backSlide('technologies', 'home');" />
+                </div>
+                <div class="leftIconTitle" >
+
+                </div>
+            </div>
+            <div class="navigationBarTitle" >Technologies</div>
+        </div>
+        <div class="pageBody">
+            <div class="skills">
+                <h3>Mobile Frameworks</h3>
+                <p>Native iOS using Objective-c and Hybrid Mobile Applicaiton using Cordova</p>
+            </div>
+            <div class="skills">
+                <h3>Web Frameworks</h3>
+                <p>Node.js and J2EE using web applicaiton development</p>
+            </div>
+            <div class="skills">
+                <h3>UI Frameworks</h3>
+                <p>jQuery, Ext.js and HTML5/CSS</p>
+            </div>
+            <div class="skills">
+                <h3>Analytics Frameworks</h3>
+                <p>Google Analytics, Customer.io and Segment.io</p>
+            </div>
+            <div class="skills">
+                <h3>DBMS</h3>
+                <p>MySQL and MongoDB</p>
+            </div>
+            <div class="skills">
+                <h3>Operating Systems</h3>
+                <p>Mac, Ubuntu and Windows</p>
+            </div>
+            <div class="skills">
+                <h3>Development Tools</h3>
+                <p>Xcode 7, Eclipse, NetBeans and WebStorm</p>
+            </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

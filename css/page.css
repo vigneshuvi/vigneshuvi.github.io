@@ -1,0 +1,163 @@
+body{
+    overflow: hidden;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.page.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.page.center {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.page.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.page.transition {
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+}
+
+.navigationBar {
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: relative;
+    height: 64px;
+    background-color: red;
+}
+
+.navigationBarTitle {
+    width: 70%;
+    position: inherit;
+    top: 17px;
+    left: 15%;
+    right: 15%;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.navigationBarLeftIcon {
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 15px;
+    top: 15px;
+}
+
+.leftIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+}
+
+
+.leftIconTitle {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 35px;
+    top : 0px;
+    font-size: 24px;
+    color: white;
+}
+
+.pageBody {
+    left: 0;
+    right: 0;
+    top: 64px;
+    bottom: 0;
+    position: inherit;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto;
+}
+
+.menuBodyLeft {
+    left: 0;
+    width: 40%;
+    font-size: 24px;
+    max-width: 280px;
+    bottom: 0;
+    height: 100%;
+    background-color: gray;
+}
+
+.menuBodyRight {
+    left: 40%;
+    width: 60%;
+    right: 0;
+    opacity:0;
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+}
+
+.transparentColor {
+    opacity:0;
+    position: absolute;
+}
+
+.menuBox {
+    float: left;
+    font-size: 16px;
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    padding: 10px 1px 10px 0px;
+    text-align: center;
+    position: inherit;
+    font-size: 18px;
+    border-top:    1px solid  white;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.experience {
+    float: left;
+    margin: 30px;
+    padding: 15px;
+    width: 40%;
+    min-width: 280px;
+    max-width: 300px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.skills {
+    float: left;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    font-size: 18px;
+    border: 1px solid black;
+}
