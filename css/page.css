@@ -64,8 +64,8 @@ body{
 
 .navigationBarLeftIcon {
     position: absolute;
-    width: 200px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     left: 15px;
     top: 15px;
 }
@@ -79,13 +79,15 @@ body{
 
 
 .leftIconTitle {
-    position: absolute;
-    width: 24px;
+    position: relative;
+    width: 100%;
     height: 24px;
     left: 35px;
-    top : 0px;
+    max-width: 280px;
+    top: 0px;
     font-size: 24px;
     color: white;
+    text-align: center;
 }
 
 .pageBody {
@@ -97,6 +99,38 @@ body{
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     margin: auto;
+}
+
+.navigationMenuBar {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    top: 15px;
+}
+
+.menuTitleLeft {
+    position: relative;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    left: 0;
+    width: 40%;
+    font-size: 24px;
+    max-width: 280px;
+    bottom: 0;
+    height: 100%;
+}
+
+.menuTitleRight {
+    left: 40%;
+    width: 60%;
+    right: 0;
+    opacity:0;
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
 }
 
 .menuBodyLeft {
@@ -113,11 +147,12 @@ body{
     left: 40%;
     width: 60%;
     right: 0;
-    opacity:0;
+    opacity:0.5;
     font-size: 24px;
     position: absolute;
     bottom: 0;
     height: 100%;
+    background: gray;
 }
 
 .transparentColor {
