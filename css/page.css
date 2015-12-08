@@ -208,7 +208,7 @@ body{
     background-image: url('../images/vignesh.jpg');
 }
 
-.experience {
+.experience, .skills {
     float: left;
     margin: 30px 10px 5px 30px;
     padding: 15px;
@@ -220,8 +220,7 @@ body{
     border: 1px solid black;
 }
 
-
-.user-name,.experience-title {
+.user-name,.experience-title,.skills-title {
     font-size: 18px;
     color: red;
 }
@@ -230,7 +229,7 @@ body{
     background-color: lightblue;
 }
 
-.user-position,.experience-company {
+.user-position,.experience-company,.skills-list {
     font-size: 17px;
     color: gray;
 }
@@ -245,21 +244,7 @@ body{
     color: gray;
 }
 
-
-
 .user-name {
     font-size: 24px;
     color: red;
-}
-
-
-.skills {
-    float: left;
-    margin: 10px;
-    padding: 15px;
-    width: 200px;
-    max-width: 200px;
-    height: 200px;
-    font-size: 18px;
-    border: 1px solid black;
 }
