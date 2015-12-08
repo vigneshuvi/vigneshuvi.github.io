@@ -283,3 +283,18 @@ body{
     font-size: 24px;
     color: red;
 }
+
+.social:hover  {
+    -webkit-animation: rotate 1s;
+    animation: rotate 1s;
+}
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
