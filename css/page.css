@@ -152,7 +152,7 @@ body{
     position: absolute;
     bottom: 0;
     height: 100%;
-    background: gray;
+    /*background: gray;*/
 }
 
 .transparentColor {
