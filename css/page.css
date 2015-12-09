@@ -74,6 +74,7 @@ body{
     position: absolute;
     width: 24px;
     height: 24px;
+    top: 5px;
     left: 5px;
 }
 
@@ -300,14 +301,14 @@ body{
     background-color: lightblue;
 }
 
-.user-position,.experience-company,.skills-list,.user-contact-email {
-    font-size: 17px;
+.user-position,.experience-company,.experience-details,.skills-list,.user-contact-email {
+    font-size: 16px;
     color: gray;
     padding: 3px;
 }
 
 .user-experience {
-    font-size: 17px;
+    font-size: 16px;
     color: gray;
 }
 
