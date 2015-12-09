@@ -94,11 +94,31 @@ body{
     left: 0;
     right: 0;
     top: 64px;
-    bottom: 0;
+    bottom: 30px;
     position: inherit;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     margin: auto;
+}
+
+.pageFooter {
+    left: 0px;
+    right: 0px;
+    height: 30px;
+    bottom: 0;
+    position: inherit;
+    margin: 0px auto;
+    background-color: lightslategray;
+}
+
+.pageFooterTitle {
+    padding: 5px;
+    height: 20px;
+    text-align: center;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    color: gainsboro;
 }
 
 .navigationMenuBar {
@@ -255,26 +275,27 @@ body{
     border: 1px solid black;
 }
 
-.user-name,.experience-title,.skills-title {
+.experience:hover,.skills:hover  {
+    box-shadow: 0 2px 2px red, 0 1px 2px gray;
+}
+
+.experience-title,.skills-title {
     font-size: 18px;
     color: red;
+
 }
 
 .current-company {
     background-color: lightblue;
 }
 
-.user-position,.experience-company,.skills-list {
+.user-position,.experience-company,.skills-list,.user-contact-email {
     font-size: 17px;
     color: gray;
+    padding: 3px;
 }
 
-.user-experience{
-    font-size: 17px;
-    color: gray;
-}
-
-.user-contact-email {
+.user-experience {
     font-size: 17px;
     color: gray;
 }
@@ -288,6 +309,7 @@ body{
     -webkit-animation: rotate 1s;
     animation: rotate 1s;
 }
+
 @-webkit-keyframes rotate {
     100% {
         -webkit-transform: rotate(360deg);
