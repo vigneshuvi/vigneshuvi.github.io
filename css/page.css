@@ -124,8 +124,9 @@ body{
 }
 
 .pageFooterTitle {
-    padding: 5px;
+    padding: 8px;
     height: 20px;
+    font-size: 12px;
     text-align: center;
     margin: 0px auto;
     left: 0px;
