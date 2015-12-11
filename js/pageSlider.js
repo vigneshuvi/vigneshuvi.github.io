@@ -1,5 +1,5 @@
 /**
- * Created by Vignesh on 12/7/15.
+ * Created by Vignesh on 12/10/15.
  */
 var pageSlider = {
     slide : function(fromDom, toDom){

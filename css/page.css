@@ -1,3 +1,7 @@
+/**
+ * Created by Vignesh on 12/10/15.
+ */
+
 body{
     position: relative; /* required */
     padding-top: 70px;	/* prevent content to go underneath the fixed navbar */
@@ -15,7 +19,29 @@ body{
     height: 80px;
 }
 
-p,h2,.icon-bar,li,.navbar-brand,table,tr,td,th {
+.pageFooter {
+    left: 0px;
+    right: 0px;
+    height: 30px;
+    bottom: 0;
+    position: relative;
+    margin: 0px auto;
+    background-color: lightslategray;
+}
+
+.pageFooterTitle {
+    padding: 8px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    color: gainsboro;
+}
+
+
+p,h2,.icon-bar,li,.navbar-brand,table,tr,td,th,.pageFooterTitle {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
