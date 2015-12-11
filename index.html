@@ -2,176 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1 maximum-scale=1">
-    <script type="text/javascript"  src="js/slider.js"></script>
-    <link rel="stylesheet" href="css/page.css" type="text/css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Vignesh Kumar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/page.css" type="text/css" >
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body{
+            position: relative; /* required */
+            padding-top: 70px;	/* prevent content to go underneath the fixed navbar */
+        }
+    </style>
 </head>
-<body>
-<!--Page with Navigation bar-->
-<div class="screen">
-    <div class="navigationBar" >
-        <div class="navigationBarTitle" ></div>
-    </div>
-
-    <!--Home Page with Navigation bar and page body-->
-    <div id = "home" class="page center">
-        <div class="navigationBar">
-            <div class="navigationBarLeftIcon" >
-                <img src="images/menu_icon.png" style="width:24px;height:24px;" onclick="javascript:pageSlider.homeMenuSlide('home', 'menu');" >
-            </div>
-            <div class="navigationBarTitle" >Profile</div>
+<body data-spy="scroll" data-target="#myNavbar" data-offset="70">
+<nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
+    <div class="container" id="navbar-custom">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Vignesh</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Vignesh</a>
         </div>
-        <div class="profilePageBody">
-            <div class="center-profile">
-                <div class="user-column-1-of-3">
-                    <div class="userImage profileImage">
-                    </div>
-                </div>
-                <div class="user-column-2-of-3">
-                    <div class="user-name">Vignesh Kumar P</div>
-                    <div class="user-position">Senior Engineer</div>
-                    <div class="user-experience">Over 3 Years of Experience</div>
-                    <div class="user-experience">in</div>
-                    <div class="user-experience">Software Development</div>
-                    <div class="user-contact-email">vigneshuvi@gmail.com</div>
-                </div>
-                <div class="user-column-3-of-3">
-                    <div class="card-face-footer">
-                        <a href="https://facebook.com/vigneshuvi" target="_blank" class="social"><img src="images/ic_fb.png" width="36" height="36" draggable="false"></a>
-                        <!--<a href="https://plus.google.com/u/1/+VigneshUvi/about" target="_blank" class="social"><img src="images/ic_gp.png" width="36" height="36" draggable="false"></a>-->
-                        <a href="http://stackoverflow.com/users/2586904/vignesh-kumar?tab=profile" target="_blank" class="social "><img src="images/ic_so.png" width="36" height="36" draggable="false"></a>
-                        <a href="https://www.linkedin.com/in/vignesh-kumar-62a35254" target="_blank" class="social"><img src="images/ic_li.png" width="36" height="36" draggable="false"></a>
-                        <a href="https://github.com/vigneshuvi" target="_blank" class="social"><img src="images/ic_git.png" width="36" height="36" draggable="false"></a>
-                        <a href="skype:vignesh.uvi?call" target="_blank" class="social"><img src="images/ic_skype.png" width="36" height="36" draggable="false"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pageFooter">
-            <div class="pageFooterTitle">2015 © Template by Vignesh</div>
-        </div>
-
-    </div>
-
-    <!--Menu Page with Navigation bar and page body-->
-    <div id = "menu" class="page left">
-        <div class="navigationBar" >
-            <div class="navigationMenuBar" >
-                <div class="menuTitleLeft" >
-                    Menu
-                </div>
-                <div class="menuTitleRight"></div>
-            </div>
-        </div>
-        <div class="profilePageBody" >
-            <div class="menuBodyLeft">
-                <div class="menuBox" onclick="javascript:pageSlider.menuBackSlide('menu', 'home');">
-                    Profile
-                </div>
-                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'experience');">
-                    Experience
-                </div>
-                <div class="menuBox" onclick="javascript:pageSlider.menuSlide('menu', 'home', 'technologies');">
-                    Skills
-                </div>
-            </div>
-            <div class="menuBodyRight" onclick="javascript:pageSlider.menuBackSlide('menu', 'home');">
-
-            </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#professional">Professional</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </div>
-
-    <!--Technologies Page with Navigation bar and page body-->
-    <div id = "technologies" class="page right">
-        <div class="navigationBar" >
-            <div class="navigationBarLeftIcon" >
-                <div class="leftIcon" >
-                    <img src="images/back-icon.png" style="width:24px;height:24px;" onclick="javascript:pageSlider.backSlide('technologies', 'home');" />
-                </div>
-                <div class="leftIconTitle" >
-
-                </div>
-            </div>
-            <div class="navigationBarTitle" >Skills</div>
-        </div>
-        <div class="pageBody">
-            <div class="skills">
-                <div class="skills-title">Mobile Frameworks</div>
-                <div class="skills-list">Native iOS using Objective-c and Hybrid Mobile Applicaiton using Cordova</div>
-            </div>
-            <div class="skills">
-                <div class="skills-title">Web Frameworks</div>
-                <div class="skills-list">Node.js and J2EE using web applicaiton development</div>
-            </div>
-            <div class="skills">
-                <div class="skills-title">UI Frameworks</div>
-                <div class="skills-list">jQuery, Ext.js and HTML5/CSS3</div>
-            </div>
-            <div class="skills">
-                <div class="skills-title">Analytics Frameworks</div>
-                <div class="skills-list">Google Analytics, Customer.io and Segment.io</div>
-            </div>
-            <div class="skills">
-                <div class="skills-title">DBMS</div>
-                <div class="skills-list">MySQL and MongoDB</div>
-            </div>
-            <div class="skills">
-                <div class="skills-title">Operating Systems</div>
-                <div class="skills-list">Mac, Ubuntu and Windows</div>
-            </div>
-            <div class="skills">
-                <div class="skills-title">Development Tools</div>
-                <div class="skills-list">Xcode 7, Eclipse, NetBeans and WebStorm</div>
-            </div>
-        </div>
-        <div class="pageFooter">
-            <div class="pageFooterTitle">2015 © Template by Vignesh</div>
-        </div>
+</nav>
+<div class="container">
+    <div id="into">
+        <h1><img src="./images/vignesh.jpg" width="70" height="50" class="img-thumbnail" > Vignesh Kumar</h1></div>
+        <p class="lead"><i>Indian. Technologist. Problem Solver. Creative. User Focused.</i></p>
+    <div id="professional" class="bottom-border"></div>
+    <hr>
+    <div id="uvi-professional" >
+        <h2>Professional</h2>
+        <p>While I was in my final year of college, I was very interested to develop and learn advance concepts in Java and wrote Oracle certification in Java 1.6. Beginning of my life as a Software Engineer Trainee Programmer in Sysvine Technologies pvt. ltd. Chennai. Sysviners founded powerful and user friendly Hosptial Management System and I was in team who developed Pharmacy and Inventory modules. The Sysvine Management is appriciated me for good work and smart problem sloving skills.</p>
+        <p>In September 2013, When apple launched 5inches iPhone in market, I had chance to learn Cocoa UI layout and Cocoa animations(UIKit.framework) to support 5 inches devices. Our team releashed app in apple store with my lead guidance.</p>
+        <p>After that I developed and released multiple iPhone mobile applicaiton into Apple iTune store and met the client deadlines. Meanwhile, I started to devleop on secure web applicaiton using Node.js and Mongodb.</p>
+        <p>Social networks role the world in mobile application, In time, I integrated social networks(Facebook and Twitter) with mobile applicaiton and had export experience in the Analytics framework integaration. </p>
+        <p>I enjoy building elegant and simple technology solutions. Simplicity on the back end is just as important as on the front end, but it is often overlooked. Simple code and infrastructure reduces complexity costs that can paralize a business over time.</p>
+        <div id="summary" class="bottom-border"></div>
     </div>
-
-    <!--Experience Page with Navigation bar and page body-->
-    <div id = "experience" class="page right">
-        <div class="navigationBarLeftIcon" >
-            <div class="leftIcon" >
-                <img src="images/back-icon.png" style="width:24px;height:24px;" onclick="javascript:pageSlider.backSlide('experience', 'home');" />
-            </div>
-            <div class="leftIconTitle" >
-
-            </div>
-        </div>
-        <div class="navigationBarTitle" >Experience</div>
-        <div class="pageBody">
-            <div class="experience current-company">
-                <div class="experience-title">Senior Engineer</div>
-                <div class="experience-company">QBurst</div>
-                <div class="experience-details">From November, 2015 to till Date</div>
-            </div>
-            <div class="experience">
-                <div class="experience-title">Senior Software Engineer</div>
-                <div class="experience-company">Sysvine Technologies Pvt. Ltd.</div>
-                <div class="experience-details">From February, 2015 to October, 2015</div>
-            </div>
-            <div class="experience">
-                <div class="experience-title">Software Engineer Level - II</div>
-                <div class="experience-company">Sysvine Technologies Pvt. Ltd.</div>
-                <div class="experience-details">From March, 2014 to Janaury, 2015</div>
-            </div>
-            <div class="experience">
-                <div class="experience-title">Software Engineer Level - I</div>
-                <div class="experience-company">Sysvine Technologies Pvt. Ltd.</div>
-                <div class="experience-details">From May, 2013 to February, 2014</div>
-            </div>
-            <div class="experience">
-                <div class="experience-title">Software Engineer Trainee</div>
-                <div class="experience-company">Sysvine Technologies Pvt. Ltd.</div>
-                <div class="experience-details">From February, 2013 to April, 2013</div>
-            </div>
-        </div>
-        <div class="pageFooter">
-            <div class="pageFooterTitle">2015 © Template by Vignesh</div>
-        </div>
+    <hr>
+    <div id="uvi-summary">
+        <h2>Summary of Experience</h2>
+        <p>Over three years of software development experience with major highlights</p>
+        <ul class="a">
+            <li>Experience in mobile application developments in Native iOS and Hybrid framework.</li>
+            <li>Experience in Design, Development and Apple store Submission Process.</li>
+            <li>Extensive programming skills in Objective - C, Java, JavaScript</li>
+            <li>Has experience in JavaScript frameworks in front-end as well in back-end</li>
+            <li>Familiar with Agile and Scrum methodologies and Project Management using JIRA</li>
+        </ul>
+        <div id="experience" class="bottom-border"></div>
     </div>
+    <hr>
+    <div id="uvi-experience">
+        <h2>Experience</h2>
+        <table class="table table-hover">
+            <thead class="company-heading">
+            <tr>
+                <th class="table-header-center">Company</th>
+                <th class="table-header-center">Position</th>
+                <th class="table-header-center">Periods</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="current-company">
+                <td>Senior Engineer</td>
+                <td>QBurst</td>
+                <td>From November, 2015 to till Date</td>
+            </tr>
+            <tr>
+                <td>Senior Software Engineer</td>
+                <td>Sysvine</td>
+                <td>From February, 2015 to October, 2015</td>
+            </tr>
+            <tr>
+                <td>Software Engineer Level - II</td>
+                <td>Sysvine</td>
+                <td>From March, 2014 to Janaury, 2015</td>
+            </tr>
+            <tr>
+                <td>Software Engineer Level - I</td>
+                <td>Sysvine</td>
+                <td>From May, 2013 to February, 2014</td>
+            </tr>
+            <tr>
+                <td>Software Engineer Trainee</td>
+                <td>Sysvine</td>
+                <td>From February, 2013 to April, 2013</td>
+            </tr>
+            </tbody>
+        </table>
+        <div id="skills" class="bottom-border"></div>
+    </div>
+    <hr>
+    <div id="uvi-skills" class="container-fluid">
+        <h2>Technical Skills</h2>
+        <table class="table table-hover">
+            <thead class="company-heading">
+            <tr>
+                <th class="table-header-center">Technologies</th>
+                <th class="table-header-center">Frameworks</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Mobile</td>
+                <td>Native iOS using Objective-c and Hybrid Mobile Applicaiton using Cordova</td>
+            </tr>
+            <tr>
+                <td>Web</td>
+                <td>Node.js and J2EE using web applicaiton development</td>
+            </tr>
+            <tr>
+                <td>User Interface</td>
+                <td>jQuery, Ext.js and HTML5/CSS3</td>
+            </tr>
+            <tr>
+                <td>Analytics</td>
+                <td>Google Analytics, Customer.io and Segment.io</td>
+            </tr>
+            <tr>
+                <td>DBMS</td>
+                <td>MySQL and MongoDB</td>
+            </tr>
+            <tr>
+                <td>Operating Systems</td>
+                <td>Mac, Ubuntu and Windows</td>
+            </tr>
+            <tr>
+                <td>Development Tools</td>
+                <td>Xcode 7, Eclipse, NetBeans and WebStorm</td>
+            </tr>
+
+            </tbody>
+        </table>
+        <div id="contact" class="bottom-border"></div>
+    </div>
+    <hr>
+    <div id="uvi-contact">
+        <h2>Contact</h2>
+        <p>Email : vigneshuvi@gmail.com</p>
+        <p>Mobile No. : +919578002867</p>
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputName3" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputName3" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Message</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Send</button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <a href="https://facebook.com/vigneshuvi" target="_blank" class="social"><img src="images/ic_fb.png" width="36" height="36" draggable="false"></a>
+        <a href="http://stackoverflow.com/users/2586904/vignesh-kumar?tab=profile" target="_blank" class="social "><img src="images/ic_so.png" width="36" height="36" draggable="false"></a>
+        <a href="https://www.linkedin.com/in/vignesh-kumar-62a35254" target="_blank" class="social"><img src="images/ic_li.png" width="36" height="36" draggable="false"></a>
+        <a href="https://github.com/vigneshuvi" target="_blank" class="social"><img src="images/ic_git.png" width="36" height="36" draggable="false"></a>
+        <a href="skype:vignesh.uvi?call" target="_blank" class="social"><img src="images/ic_skype.png" width="36" height="36" draggable="false"></a>
+    </div>
+    <hr>
+    <br>
+    <br>
 </div>
 </body>
-</html>
+</html>                                		
