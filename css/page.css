@@ -19,7 +19,6 @@ body{
     height: 80px;
 }
 
-
 .pageFooter {
     left: 0px;
     right: 0px;
@@ -42,8 +41,17 @@ body{
 }
 
 
-p,h2,.icon-bar,li,.navbar-brand,table,tr,td,th,.pageFooterTitle {
+p,h2,.icon-bar,li,.navbar-brand,table,tr,td,th,.pageFooterTitle,button,form,input {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.button-color{
+    color: #003366 ;
+    border-color: lightslategray;
 }
 
 textarea {
@@ -139,7 +147,7 @@ textarea {
     background-color: transparent;
 }
 .navbar-custom .navbar-toggle {
-    border-color: #dddddd;
+    border-color: lightslategray;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
@@ -200,4 +208,11 @@ textarea {
 }
 .navbar-custom .navbar-link:hover {
     color: #c9baba;
+}
+
+
+textarea:focus, input:focus, .uneditable-input:focus {
+    border-color: lightslategray !important;
+    box-shadow: 0 1px 1px lightslategray inset, 0 0 8px lightslategray !important;
+    outline: 0 none !important;
 }

@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./favicon.ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicon.ico/ms-icon-144x144.png">
@@ -26,27 +27,7 @@
     <link rel="stylesheet" href="css/page.css" type="text/css" >
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        function requestEmail() {
-            var name = document.getElementById("reqName").value,
-                    email = document.getElementById("reqEmail").value,
-                    message = document.getElementById("reqMessage").value;
-            var contactURL = window.location.protocol + "//" + window.location.host + "/" + "contact";
-            $.ajax({
-                type: "POST",
-                url: contactURL,
-                contentType: 'application/json',
-                data: JSON.stringify( { "reqName": name, "reqEmail":email } ),
-                success: function(){
-                    alert('success');
-                },
-                error: function(){
-                    alert('failure');
-                },
-                dataType: 'application/json'
-            });
-        }
-    </script>
+    <script type="text/javascript" src="js/validate.js"></script>
 </head>
 <body data-spy="scroll" data-target="#myNavbar" data-offset="70">
 <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
@@ -81,11 +62,47 @@
     <hr>
     <div id="uvi-professional" >
         <h2>Professional</h2>
-        <p>While I was in my final year of college, I was very interested to develop and learn advance concepts in Java and wrote Oracle certification in Java 1.6. Beginning of my life as a Software Engineer Trainee Programmer in Sysvine Technologies pvt. ltd. Chennai. Sysviners founded powerful and user friendly Hosptial Management System and I was in team who developed Pharmacy and Inventory modules. The Sysvine Management is appriciated me for good work and smart problem sloving skills.</p>
-        <p>In September 2013, When apple launched 5inches iPhone in market, I had chance to learn Cocoa UI layout and Cocoa animations(UIKit.framework) to support 5 inches devices. Our team releashed app in apple store with my lead guidance.</p>
-        <p>After that I developed and released multiple iPhone mobile applicaiton into Apple iTune store and met the client deadlines. Meanwhile, I started to devleop on secure web applicaiton using Node.js and Mongodb.</p>
-        <p>Social networks role the world in mobile application, In time, I integrated social networks(Facebook and Twitter) with mobile applicaiton and had export experience in the Analytics framework integaration. </p>
-        <p>I enjoy building elegant and simple technology solutions. Simplicity on the back end is just as important as on the front end, but it is often overlooked. Simple code and infrastructure reduces complexity costs that can paralize a business over time.</p>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    While I was in my final year of college, I was very interested to develop and learn advance concepts in Java and wrote Oracle certification in Java 1.6.
+                    Beginning of my life as a Software Engineer Trainee Programmer in Sysvine Technologies pvt. ltd. Chennai.
+                    Sysviners founded powerful and user friendly Hosptial Management System and I was in team who developed Pharmacy and Inventory modules.
+                    The Sysvine Management is appriciated me for good work and smart problem sloving skills.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    In September 2013, When apple launched 5inches iPhone in market,
+                    I had chance to learn Cocoa UI layout and Cocoa animations(UIKit.framework) to support 5 inches devices.
+                    Our team releashed app in apple store with my lead guidance.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    After that I developed and released multiple iPhone mobile applicaiton into Apple iTune store and met the client deadlines.
+                    Meanwhile, I started to devleop on secure web applicaiton using Node.js and Mongodb.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Social networks role the mobile application world.
+                    To get all social activities via Our application, I integrated social networks(Facebook and Twitter) frameworks with mobile application and had export experience in the Analytics framework integaration.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>I enjoy building elegant and simple technology solutions. Simplicity on the back end is just as important as on the front end, but it is often overlooked. Simple code and infrastructure reduces complexity costs that can paralize a business over time.</p>
+            </div>
+        </div>
         <div id="summary" class="bottom-border"></div>
     </div>
     <hr>
@@ -143,7 +160,7 @@
         <div id="skills" class="bottom-border"></div>
     </div>
     <hr>
-    <div id="uvi-skills" class="container-fluid">
+    <div id="uvi-skills">
         <h2>Technical Skills</h2>
         <table class="table table-hover">
             <thead class="company-heading">
@@ -194,28 +211,39 @@
             <p><a href="tel:+919578002867" class="phone">+91 9578002867</a> - I prefer email to set up calls as I don't have a secretary!</p>
         </div>
 
-        <!--<form class="form-horizontal"  action="javascript:handleIt()">
+        <!--<form class="form-group"  action="javascript:uviValidate.validateInput()">
             <div class="form-group">
-                <label for="reqName" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-6">
-                    <input type="text" name="reqName" class="form-control" id="reqName" placeholder="Name">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <input type="text" name="reqName" class="form-control" id="reqName" placeholder="Name">
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="email" name="reqEmail" class="form-control" id="reqEmail" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="text" name="reqSubject" class="form-control" id="reqSubject" placeholder="Subject">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea class="form-control" name="reqMsg" id="reqMessage" rows="3" placeholder="Message"></textarea>
+                    </div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="reqEmail" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-6">
-                    <input type="email" name="reqEmail" class="form-control" id="reqEmail" placeholder="Email">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="reqMessage" class="col-sm-2 control-label">Message</label>
-                <div class="col-sm-6">
-                    <textarea class="form-control" name="reqMsg" id="reqMessage" rows="3"></textarea>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Send</button>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <button type="submit" class="btn btn-default button-color">Send</button>
+                        <button type="button" onclick="javascript:uviValidate.resetFields()" class="btn btn-default button-color">Reset</button>
+                    </div>
                 </div>
             </div>
         </form>-->
