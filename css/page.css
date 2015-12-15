@@ -151,7 +151,7 @@ textarea {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-    background-color: #dddddd;
+    background-color: #d3182f;
 }
 .navbar-custom .navbar-toggle .icon-bar {
     background-color: #cccccc;
