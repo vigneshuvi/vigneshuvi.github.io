@@ -41,7 +41,7 @@ body{
 }
 
 
-p,h2,.icon-bar,li,.navbar-brand,table,tr,td,th,.pageFooterTitle,button,form,input {
+p,h1,h2,.icon-bar,li,.navbar-brand,table,tr,td,th,.pageFooterTitle,button,form,input {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
