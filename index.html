@@ -203,6 +203,8 @@
                         resData.sort(comp);
                         for (var i = 0; i < resData.length - 1; i++) {
                             var repoDetails = resData[i];
+                            var starCount = parseInt(repoDetails["stargazers_count"]);
+                            var language = repoDetails["language"];
                             var template ='<div class="post-preview"> '+
                         '<a href="'+repoDetails["html_url"] +'">'+
                             '<h2 class="post-title">'+
@@ -211,16 +213,26 @@
                             '<h3 class="post-subtitle">'+
                             repoDetails["description"]+
                             '</h3>'+
-                        '</a>'+
-                        '<div class="row">'+
-                            // '<div class="col-sm-3" style="background-color:white;">'+
-                            //  '<img src="https://img.shields.io/badge/Forks-'+repoDetails["forks_count"]+'-blue.svg?style=shields"  draggable="false">'+
-                            // '</div>'+
-                            '<div class="col-sm-6" style="background-color:white;">'+
-                             '<img src="https://img.shields.io/badge/Stars-'+repoDetails["stargazers_count"]+'-green.svg?style=shields"  draggable="false">'+
-                            '</div>'+
-                            '</div>'+
-                            '<p class="post-meta">Posted by <a href="http://vigneshuvi.github.io/">vigneshuvi</a> on '+formatDate(new Date(repoDetails["updated_at"])) + '</p>'+
+                        '</a>' +
+                        '<div class="row">';
+
+                        if (language) {
+                            template = template +
+                           '<div class="col-sm-8" style="background-color:white;">'+
+                             '<img src="https://img.shields.io/badge/Language-'+language.replace("-", "_")+'-orange.svg?style=shields"  draggable="false">'+"  "; 
+                            if (starCount && starCount > 0) {
+                                template = template +
+                                 '<img src="https://img.shields.io/badge/Stars-'+starCount+'-green.svg?style=shields"  draggable="false">';
+                                
+                            }
+                            template = template +  '</div>';
+                            
+                        }
+                       
+                       
+                           
+                        template = template +   '</div>' +
+                        '<p class="post-meta">Posted by <a href="http://vigneshuvi.github.io/">vigneshuvi</a> on '+formatDate(new Date(repoDetails["updated_at"])) + '</p>'+
                         '</div>'+
                         '<hr>';
                         $( "#repoContainer" ).append( template );
