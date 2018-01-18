@@ -223,29 +223,22 @@
                              '<img src="https://img.shields.io/badge/Language-'+language.replace("-", "_")+'-orange.svg?style=shields"  draggable="false">'+"  "; 
                             if (starCount && starCount > 0) {
                                 template = template +
-                                 '<img src="https://img.shields.io/badge/Stars-'+starCount+'-green.svg?style=shields"  draggable="false">';
+                                 '<img src="https://img.shields.io/badge/Stars-'+starCount+'-green.svg?style=shields"  draggable="false">'+"  ";
                                 
                             }
+                            if (license) {
+                                let spdxId = license["spdx_id"];
+                                if (spdxId) {
+                                    template = template +
+                                    '<img src="https://img.shields.io/badge/License-'+spdxId.replace("-", "_")+'-blue.svg?style=shields"  draggable="false">'+"  ";
+                                }
+                            } 
                             template = template +  '</div>';
                             
                         }
 
-                        if (license) {
-                            let spdxId = license["spdx_id"];
-                            if (spdxId) {
-                                template = template +
-                               '<div class="col-sm-8" style="background-color:white;">'+
-                                 '<img src="https://img.shields.io/badge/License-'+license.replace("-", "_")+'-green.svg?style=shields"  draggable="false">'+"  "; 
-                                if (starCount && starCount > 0) {
-                                    template = template +
-                                     '<img src="https://img.shields.io/badge/Stars-'+starCount+'-green.svg?style=shields"  draggable="false">';
-                                    
-                                }
-                                template = template +  '</div>';
-                            }
-                        }                       
-                       
-                           
+
+
                         template = template +   '</div>' +
                         '<p class="post-meta">Posted by <a href="http://vigneshuvi.github.io/">vigneshuvi</a> on '+formatDate(new Date(repoDetails["updated_at"])) + '</p>'+
                         '</div>'+
