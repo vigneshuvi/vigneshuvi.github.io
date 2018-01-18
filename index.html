@@ -205,6 +205,7 @@
                             var repoDetails = resData[i];
                             var starCount = parseInt(repoDetails["stargazers_count"]);
                             var language = repoDetails["language"];
+                            var license = repoDetails["license"];
                             var template ='<div class="post-preview"> '+
                         '<a href="'+repoDetails["html_url"] +'">'+
                             '<h2 class="post-title">'+
@@ -228,6 +229,23 @@
                             template = template +  '</div>';
                             
                         }
+
+                        if (license) {
+                            let spdxId = license["spdx_id"];
+                            if (spdxId) {
+                                template = template +
+                               '<div class="col-sm-8" style="background-color:white;">'+
+                                 '<img src="https://img.shields.io/badge/License-'+license.replace("-", "_")+'-green.svg?style=shields"  draggable="false">'+"  "; 
+                                if (starCount && starCount > 0) {
+                                    template = template +
+                                     '<img src="https://img.shields.io/badge/Stars-'+starCount+'-green.svg?style=shields"  draggable="false">';
+                                    
+                                }
+                                template = template +  '</div>';
+                            }
+                        }
+
+                        https://img.shields.io/badge/License-MIT-green.svg
                        
                        
                            
