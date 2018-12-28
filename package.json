@@ -21,5 +21,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vigneshuvi.github.io.git"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "gulp-watch": "gulp watch"
   }
 }
